@@ -25,8 +25,7 @@ built for bypassing censorship. tested against advanced DPI systems.
 
 ```mermaid
 flowchart TD
-    A["Your Application
-    Browser / Telegram / Any"]
+    A["Your Application / Telegram / Any"]
 
     A -->|localhost:10809| B["Protocol Detector"]
 
@@ -142,7 +141,7 @@ python3 main.py
 **configure your client:**
 
 ```
-# Browser (HTTP)
+# Proxy (HTTP)
 Proxy: localhost:10809  |  Type: HTTP
 
 # SOCKS5
@@ -150,6 +149,8 @@ Host: localhost  |  Port: 10809  |  Type: SOCKS5
 
 # Telegram
 Connection: SOCKS5  |  Server: localhost  |  Port: 10809
+
+But not working
 ```
 
 ---
@@ -262,6 +263,6 @@ chaos:
 
 **MIT License** — use freely, ethically, responsibly.
 
-*Stay Unknown,  Stay Free* 
+*✧ 𝙎𝙩𝙖𝙮 𝙐𝙣𝙠𝙣𝙤𝙬𝙣, 𝙨𝙩𝙖𝙮 𝙛𝙧𝙚𝙚 ✧* 
 
 </div>
