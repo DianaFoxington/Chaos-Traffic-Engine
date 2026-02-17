@@ -136,9 +136,11 @@ async def main():
             stats_collector.print_summary()
             asyncio.create_task(proxy_server.stop())
         
-        loop = asyncio.get_event_loop()
-        for sig in (signal.SIGTERM, signal.SIGINT):
-            loop.add_signal_handler(sig, lambda s=sig: signal_handler(s))
+        import platform
+        if platform.system() != 'Windows':
+            loop = asyncio.get_event_loop()
+            for sig in (signal.SIGTERM, signal.SIGINT):
+                loop.add_signal_handler(sig, lambda s=sig: signal_handler(s))
         
         await proxy_server.start()
         
