@@ -1,0 +1,590 @@
+2026-02-16 22:50:20 | [32mINFO[0m | CTE | ============================================================
+2026-02-16 22:50:20 | [32mINFO[0m | CTE | Chaos Traffic Engine - Logging initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE | Log level: INFO
+2026-02-16 22:50:20 | [32mINFO[0m | CTE | Log file: cte.log
+2026-02-16 22:50:20 | [32mINFO[0m | CTE | ============================================================
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | 🚀 Chaos Traffic Engine
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | Anti-Censorship Proxy
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | Initializing components...
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ✓ Chaos Engine initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.DNS | Loaded 6 DoH + 4 DoT servers from config/dns_servers.json
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.DNS | Loaded DNS servers: 6 DoH, 4 DoT (mode: doh)
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ✓ DNS Resolver initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ✓ TLS Fragmenter initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Fronting | ✓ Domain Fronting: 7 CDNs, 23 domains
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ✓ Domain Fronting initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Bypass | Bypass enabled: 27 domains, 593 IP ranges
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ✓ Bypass Manager initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Stats | ✓ Stats collector initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ✓ Stats Collector initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Limiter | ✓ Connection limit: 100
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ✓ Connection Limiter initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ✓ Traffic Relay initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ✓ 4 Protocol Handlers initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Proxy | Proxy server initialized: 0.0.0.0:10809
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Proxy | Protocols: 4
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ✓ Proxy Server initialized
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | All components initialized successfully!
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:20 | [31mERROR[0m | CTE.Proxy | Server error: [Errno 98] error while attempting to bind on address ('0.0.0.0', 10809): [errno 98] address already in use
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | 📊 Final Statistics:
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | 👋 Chaos Traffic Engine stopped
+2026-02-16 22:50:20 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:32 | [32mINFO[0m | CTE | ============================================================
+2026-02-16 22:50:32 | [32mINFO[0m | CTE | Chaos Traffic Engine - Logging initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE | Log level: INFO
+2026-02-16 22:50:32 | [32mINFO[0m | CTE | Log file: cte.log
+2026-02-16 22:50:32 | [32mINFO[0m | CTE | ============================================================
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | 🚀 Chaos Traffic Engine
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | Anti-Censorship Proxy
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | Initializing components...
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ✓ Chaos Engine initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.DNS | Loaded 6 DoH + 4 DoT servers from config/dns_servers.json
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.DNS | Loaded DNS servers: 6 DoH, 4 DoT (mode: doh)
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ✓ DNS Resolver initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ✓ TLS Fragmenter initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Fronting | ✓ Domain Fronting: 7 CDNs, 23 domains
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ✓ Domain Fronting initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Bypass | Bypass enabled: 27 domains, 593 IP ranges
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ✓ Bypass Manager initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Stats | ✓ Stats collector initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ✓ Stats Collector initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Limiter | ✓ Connection limit: 100
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ✓ Connection Limiter initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ✓ Traffic Relay initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ✓ 4 Protocol Handlers initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Proxy | Proxy server initialized: 0.0.0.0:10809
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Proxy | Protocols: 4
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ✓ Proxy Server initialized
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | All components initialized successfully!
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Proxy | ============================================================
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Proxy | 🚀 Chaos Traffic Engine Started!
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Proxy | 📡 Listening on 0.0.0.0:10809
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Proxy | 🔧 Max connections: 100
+2026-02-16 22:50:32 | [32mINFO[0m | CTE.Proxy | ============================================================
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.Proxy | [0a1f860b] Protocol: HTTP
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.Protocols | HTTP Request: GET http://connectivitycheck.gstatic.com/generate_204
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel HTTP: connectivitycheck.gstatic.com
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.Proxy | [6bad52ff] Protocol: HTTP
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT connectivitycheck.gstatic.com:443
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: connectivitycheck.gstatic.com
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.Proxy | [d61f8e0b] Protocol: HTTP
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT www.google.cn:443
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: www.google.cn
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.DNS | Resolved connectivitycheck.gstatic.com -> 142.250.75.99 (DOH)
+2026-02-16 22:50:46 | [32mINFO[0m | CTE.DNS | Resolved connectivitycheck.gstatic.com -> 142.250.75.99 (DOH)
+2026-02-16 22:50:47 | [32mINFO[0m | CTE.DNS | Resolved www.google.cn -> 142.250.75.67 (DOH)
+2026-02-16 22:50:47 | [32mINFO[0m | CTE.Proxy | [a782a99e] Protocol: HTTP
+2026-02-16 22:50:47 | [32mINFO[0m | CTE.Protocols | HTTP Request: GET http://connectivitycheck.gstatic.com/generate_204
+2026-02-16 22:50:47 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel HTTP: connectivitycheck.gstatic.com
+2026-02-16 22:50:47 | [32mINFO[0m | CTE.Proxy | [e66e4bc7] Protocol: HTTP
+2026-02-16 22:50:47 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT connectivitycheck.gstatic.com:443
+2026-02-16 22:50:47 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: connectivitycheck.gstatic.com
+2026-02-16 22:50:47 | [32mINFO[0m | CTE.Proxy | [8f25b92d] Protocol: HTTP
+2026-02-16 22:50:47 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT www.google.cn:443
+2026-02-16 22:50:47 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: www.google.cn
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Proxy | [293971c4] Protocol: HTTP
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT youtubei.googleapis.com:443
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: youtubei.googleapis.com
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Proxy | [223fa598] Protocol: HTTP
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT i.ytimg.com:443
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: i.ytimg.com
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.DNS | Resolved i.ytimg.com -> 142.250.75.182 (DOH)
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Proxy | [50cb8b97] Protocol: HTTP
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT youtubei.googleapis.com:443
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: youtubei.googleapis.com
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Proxy | [a6cbc6f5] Protocol: HTTP
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT youtubei.googleapis.com:443
+2026-02-16 22:50:50 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: youtubei.googleapis.com
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Proxy | [f13c6792] Protocol: HTTP
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT youtubei.googleapis.com:443
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: youtubei.googleapis.com
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Proxy | [c6a354fc] Protocol: HTTP
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT s.youtube.com:443
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: s.youtube.com
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.DNS | Resolved youtubei.googleapis.com -> 216.239.32.223 (DOH)
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.DNS | Resolved youtubei.googleapis.com -> 216.239.38.223 (DOH)
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Proxy | [acaa08b5] Protocol: HTTP
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT s.youtube.com:443
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: s.youtube.com
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Proxy | [47cbe16f] Protocol: HTTP
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT s.youtube.com:443
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: s.youtube.com
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.DNS | Resolved youtubei.googleapis.com -> 216.239.32.223 (DOH)
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.DNS | Resolved youtubei.googleapis.com -> 216.239.36.223 (DOH)
+2026-02-16 22:50:51 | [32mINFO[0m | CTE.DNS | Resolved s.youtube.com -> 64.233.167.113 (DOH)
+2026-02-16 22:50:52 | [32mINFO[0m | CTE.DNS | Resolved s.youtube.com -> 64.233.184.139 (DOH)
+2026-02-16 22:50:53 | [32mINFO[0m | CTE.Proxy | [f16aede2] Protocol: HTTP
+2026-02-16 22:50:53 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr3---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 22:50:53 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr3---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 22:50:53 | [32mINFO[0m | CTE.Proxy | [31973908] Protocol: HTTP
+2026-02-16 22:50:53 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT www.youtube.com:443
+2026-02-16 22:50:53 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: www.youtube.com
+2026-02-16 22:50:53 | [32mINFO[0m | CTE.DNS | Resolved s.youtube.com -> 74.125.133.138 (DOH)
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.DNS | Resolved rr3---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.18 (DOH)
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.DNS | Resolved www.youtube.com -> 142.250.75.174 (DOH)
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.Proxy | [355e1aeb] Protocol: HTTP
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT redirector.googlevideo.com:443
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: redirector.googlevideo.com
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.Proxy | [df0be598] Protocol: HTTP
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT redirector.googlevideo.com:443
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: redirector.googlevideo.com
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.Proxy | [fa5d1d37] Protocol: HTTP
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT redirector.googlevideo.com:443
+2026-02-16 22:50:54 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: redirector.googlevideo.com
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.DNS | Resolved redirector.googlevideo.com -> 142.251.38.238 (DOH)
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.DNS | Resolved redirector.googlevideo.com -> 142.250.75.110 (DOH)
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.Proxy | [55c0b0d2] Protocol: HTTP
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr12---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr12---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.Proxy | [03dfed31] Protocol: HTTP
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr12---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr12---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.Proxy | [14a5fc05] Protocol: HTTP
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr12---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 22:50:55 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr12---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.DNS | Resolved rr12---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.27 (DOH)
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Proxy | [10b79295] Protocol: HTTP
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjur.googlevideo.com:443
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjur.googlevideo.com
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.DNS | Resolved rr12---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.27 (DOH)
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Proxy | [06f49766] Protocol: HTTP
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr3---sn-vh5ouxa-hjuee.googlevideo.com:443
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr3---sn-vh5ouxa-hjuee.googlevideo.com
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Proxy | [863ddbf0] Protocol: HTTP
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.DNS | Resolved rr3---sn-vh5ouxa-hjuee.googlevideo.com -> 185.200.126.142 (DOH)
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.DNS | Resolved rr6---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.21 (DOH)
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Proxy | [49a8c284] Protocol: HTTP
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT yt3.ggpht.com:443
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: yt3.ggpht.com
+2026-02-16 22:50:56 | [32mINFO[0m | CTE.DNS | Resolved rr12---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.27 (DOH)
+2026-02-16 22:50:57 | [32mINFO[0m | CTE.DNS | Resolved yt3.ggpht.com -> 142.250.187.129 (DOH)
+2026-02-16 22:50:57 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjur.googlevideo.com -> 185.200.126.48 (DOH)
+2026-02-16 22:50:57 | [32mINFO[0m | CTE.Proxy | [c49a5fa1] Protocol: HTTP
+2026-02-16 22:50:57 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr4---sn-vh5ouxa-hjue7.googlevideo.com:443
+2026-02-16 22:50:57 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr4---sn-vh5ouxa-hjue7.googlevideo.com
+2026-02-16 22:50:57 | [32mINFO[0m | CTE.Proxy | [e884d0cb] Protocol: HTTP
+2026-02-16 22:50:57 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT googleads.g.doubleclick.net:443
+2026-02-16 22:50:57 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: googleads.g.doubleclick.net
+2026-02-16 22:50:57 | [32mINFO[0m | CTE.DNS | Resolved rr4---sn-vh5ouxa-hjue7.googlevideo.com -> 185.200.126.111 (DOH)
+2026-02-16 22:50:59 | [32mINFO[0m | CTE.DNS | Resolved googleads.g.doubleclick.net -> 142.250.75.162 (DOH)
+2026-02-16 22:51:09 | [32mINFO[0m | CTE.Proxy | [a4bc4c96] Protocol: HTTP
+2026-02-16 22:51:09 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT suggestqueries.google.com:443
+2026-02-16 22:51:09 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: suggestqueries.google.com
+2026-02-16 22:51:10 | [32mINFO[0m | CTE.DNS | Resolved suggestqueries.google.com -> 142.250.75.174 (DOH)
+2026-02-16 22:51:26 | [33mWARNING[0m | CTE.DNS | Encrypted DNS failed for redirector.googlevideo.com, trying system DNS
+2026-02-16 22:51:31 | [32mINFO[0m | CTE.Proxy | [70554518] Protocol: HTTP
+2026-02-16 22:51:31 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT playatoms-pa.googleapis.com:443
+2026-02-16 22:51:31 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: playatoms-pa.googleapis.com
+2026-02-16 22:51:32 | [32mINFO[0m | CTE.DNS | Resolved playatoms-pa.googleapis.com -> 142.250.75.202 (DOH)
+2026-02-16 22:51:47 | [32mINFO[0m | CTE.Proxy | [30cad56d] Protocol: HTTP
+2026-02-16 22:51:47 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT www.google.com:443
+2026-02-16 22:51:47 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: www.google.com
+2026-02-16 22:51:47 | [32mINFO[0m | CTE.DNS | Resolved www.google.com -> 142.250.75.132 (DOH)
+2026-02-16 22:52:16 | [32mINFO[0m | CTE.Proxy | [b7c41f80] Protocol: HTTP
+2026-02-16 22:52:16 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT diagmon-serviceapi.samsungdm.com:443
+2026-02-16 22:52:16 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: diagmon-serviceapi.samsungdm.com
+2026-02-16 22:52:17 | [32mINFO[0m | CTE.DNS | Resolved diagmon-serviceapi.samsungdm.com -> 52.208.214.105 (DOH)
+2026-02-16 22:55:25 | [32mINFO[0m | CTE.Proxy | [dd702162] Protocol: HTTP
+2026-02-16 22:55:25 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT youtubei.googleapis.com:443
+2026-02-16 22:55:25 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: youtubei.googleapis.com
+2026-02-16 22:55:25 | [32mINFO[0m | CTE.Proxy | [15da590f] Protocol: HTTP
+2026-02-16 22:55:25 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr4---sn-vh5ouxa-hjue7.googlevideo.com:443
+2026-02-16 22:55:25 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr4---sn-vh5ouxa-hjue7.googlevideo.com
+2026-02-16 22:55:25 | [32mINFO[0m | CTE.Proxy | [ad54166f] Protocol: HTTP
+2026-02-16 22:55:25 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT s.youtube.com:443
+2026-02-16 22:55:25 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: s.youtube.com
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Proxy | [69272dfb] Protocol: HTTP
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr12---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr12---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Proxy | [fe5e0c89] Protocol: HTTP
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT redirector.googlevideo.com:443
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: redirector.googlevideo.com
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Proxy | [29f99d8f] Protocol: HTTP
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT redirector.googlevideo.com:443
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: redirector.googlevideo.com
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Proxy | [8072f2ac] Protocol: HTTP
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT redirector.googlevideo.com:443
+2026-02-16 22:55:26 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: redirector.googlevideo.com
+2026-02-16 22:55:27 | [32mINFO[0m | CTE.Proxy | [a99e3415] Protocol: HTTP
+2026-02-16 22:55:27 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjur.googlevideo.com:443
+2026-02-16 22:55:27 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjur.googlevideo.com
+2026-02-16 22:55:27 | [32mINFO[0m | CTE.Proxy | [5c82aad1] Protocol: HTTP
+2026-02-16 22:55:27 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr3---sn-vh5ouxa-hjuee.googlevideo.com:443
+2026-02-16 22:55:27 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr3---sn-vh5ouxa-hjuee.googlevideo.com
+2026-02-16 22:55:27 | [32mINFO[0m | CTE.Proxy | [71314275] Protocol: HTTP
+2026-02-16 22:55:27 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 22:55:27 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 22:55:28 | [32mINFO[0m | CTE.Proxy | [a0457866] Protocol: HTTP
+2026-02-16 22:55:28 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT api.weather.com:443
+2026-02-16 22:55:28 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: api.weather.com
+2026-02-16 22:55:30 | [32mINFO[0m | CTE.DNS | Resolved api.weather.com -> 85.132.112.49 (DOH)
+2026-02-16 22:56:11 | [32mINFO[0m | CTE.Proxy | [044d01ec] Protocol: HTTP
+2026-02-16 22:56:11 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT yt3.ggpht.com:443
+2026-02-16 22:56:11 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: yt3.ggpht.com
+2026-02-16 22:56:11 | [32mINFO[0m | CTE.Proxy | [3c0a41e1] Protocol: HTTP
+2026-02-16 22:56:11 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT yt3.ggpht.com:443
+2026-02-16 22:56:11 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: yt3.ggpht.com
+2026-02-16 22:56:11 | [32mINFO[0m | CTE.Proxy | [b3331631] Protocol: HTTP
+2026-02-16 22:56:11 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT yt3.ggpht.com:443
+2026-02-16 22:56:11 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: yt3.ggpht.com
+2026-02-16 22:56:15 | [32mINFO[0m | CTE.Proxy | [f3e803a0] Protocol: HTTP
+2026-02-16 22:56:15 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT sdk.pushmessage.samsung.com:443
+2026-02-16 22:56:15 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: sdk.pushmessage.samsung.com
+2026-02-16 22:56:15 | [32mINFO[0m | CTE.DNS | Resolved sdk.pushmessage.samsung.com -> 54.220.24.68 (DOH)
+2026-02-16 22:56:20 | [32mINFO[0m | CTE.Proxy | [d39beec4] Protocol: HTTP
+2026-02-16 22:56:20 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT i.ytimg.com:443
+2026-02-16 22:56:20 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: i.ytimg.com
+2026-02-16 22:56:20 | [32mINFO[0m | CTE.Proxy | [1f039763] Protocol: HTTP
+2026-02-16 22:56:20 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT www.youtube.com:443
+2026-02-16 22:56:20 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: www.youtube.com
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Proxy | [4151790e] Protocol: HTTP
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr8---sn-vh5ouxa-hjue7.googlevideo.com:443
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr8---sn-vh5ouxa-hjue7.googlevideo.com
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Proxy | [95d9568a] Protocol: HTTP
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Proxy | [7a30c167] Protocol: HTTP
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Proxy | [9469fde0] Protocol: HTTP
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 22:57:08 | [32mINFO[0m | CTE.DNS | Resolved rr8---sn-vh5ouxa-hjue7.googlevideo.com -> 185.200.126.115 (DOH)
+2026-02-16 22:57:09 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.20 (DOH)
+2026-02-16 22:57:09 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.20 (DOH)
+2026-02-16 22:57:09 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.20 (DOH)
+2026-02-16 22:57:52 | [32mINFO[0m | CTE.Proxy | [f99f536d] Protocol: HTTP
+2026-02-16 22:57:52 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr2---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 22:57:52 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr2---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 22:57:52 | [32mINFO[0m | CTE.Proxy | [9e59aff7] Protocol: HTTP
+2026-02-16 22:57:52 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr2---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 22:57:52 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr2---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 22:57:52 | [32mINFO[0m | CTE.Proxy | [8734fde9] Protocol: HTTP
+2026-02-16 22:57:52 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr2---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 22:57:52 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr2---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 22:57:53 | [32mINFO[0m | CTE.DNS | Resolved rr2---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.17 (DOH)
+2026-02-16 22:57:53 | [32mINFO[0m | CTE.DNS | Resolved rr2---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.17 (DOH)
+2026-02-16 22:57:53 | [32mINFO[0m | CTE.DNS | Resolved rr2---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.17 (DOH)
+2026-02-16 22:57:53 | [32mINFO[0m | CTE.Proxy | [462de4ee] Protocol: HTTP
+2026-02-16 22:57:53 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr2---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 22:57:53 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr2---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 22:58:03 | [32mINFO[0m | CTE.Proxy | [1277acc9] Protocol: HTTP
+2026-02-16 22:58:03 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT googleads.g.doubleclick.net:443
+2026-02-16 22:58:03 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: googleads.g.doubleclick.net
+2026-02-16 22:58:03 | [32mINFO[0m | CTE.DNS | Resolved googleads.g.doubleclick.net -> 142.250.75.194 (DOH)
+2026-02-16 22:58:14 | [32mINFO[0m | CTE.Proxy | [7f09b53d] Protocol: HTTP
+2026-02-16 22:58:14 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 22:58:14 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 22:58:14 | [32mINFO[0m | CTE.Proxy | [dfeac264] Protocol: HTTP
+2026-02-16 22:58:14 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 22:58:14 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 22:58:14 | [32mINFO[0m | CTE.Proxy | [29c70d00] Protocol: HTTP
+2026-02-16 22:58:14 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 22:58:14 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 22:58:14 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.80 (DOH)
+2026-02-16 22:58:15 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.80 (DOH)
+2026-02-16 22:58:15 | [32mINFO[0m | CTE.Proxy | [daad0b8e] Protocol: HTTP
+2026-02-16 22:58:15 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 22:58:15 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 22:58:17 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.80 (DOH)
+2026-02-16 22:58:24 | [32mINFO[0m | CTE.Proxy | [13b151c6] Protocol: HTTP
+2026-02-16 22:58:24 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT www.google.com:443
+2026-02-16 22:58:24 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: www.google.com
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.Proxy | [95ae3977] Protocol: HTTP
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjuee.googlevideo.com:443
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjuee.googlevideo.com
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.Proxy | [82d95b12] Protocol: HTTP
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjuee.googlevideo.com:443
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjuee.googlevideo.com
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.Proxy | [4916550e] Protocol: HTTP
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjuee.googlevideo.com:443
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjuee.googlevideo.com
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjuee.googlevideo.com -> 185.200.126.144 (DOH)
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjuee.googlevideo.com -> 185.200.126.144 (DOH)
+2026-02-16 22:59:40 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjuee.googlevideo.com -> 185.200.126.144 (DOH)
+2026-02-16 22:59:51 | [32mINFO[0m | CTE.Proxy | [557fc77d] Protocol: HTTP
+2026-02-16 22:59:51 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr2---sn-vh5ouxa-hjue7.googlevideo.com:443
+2026-02-16 22:59:51 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr2---sn-vh5ouxa-hjue7.googlevideo.com
+2026-02-16 22:59:51 | [32mINFO[0m | CTE.Proxy | [077de4c7] Protocol: HTTP
+2026-02-16 22:59:51 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr2---sn-vh5ouxa-hjue7.googlevideo.com:443
+2026-02-16 22:59:51 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr2---sn-vh5ouxa-hjue7.googlevideo.com
+2026-02-16 22:59:51 | [32mINFO[0m | CTE.Proxy | [0d9db506] Protocol: HTTP
+2026-02-16 22:59:51 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr2---sn-vh5ouxa-hjue7.googlevideo.com:443
+2026-02-16 22:59:51 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr2---sn-vh5ouxa-hjue7.googlevideo.com
+2026-02-16 22:59:52 | [32mINFO[0m | CTE.DNS | Resolved rr2---sn-vh5ouxa-hjue7.googlevideo.com -> 185.200.126.109 (DOH)
+2026-02-16 22:59:52 | [32mINFO[0m | CTE.Proxy | [3d1e81a6] Protocol: HTTP
+2026-02-16 22:59:52 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr2---sn-vh5ouxa-hjue7.googlevideo.com:443
+2026-02-16 22:59:52 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr2---sn-vh5ouxa-hjue7.googlevideo.com
+2026-02-16 22:59:52 | [32mINFO[0m | CTE.DNS | Resolved rr2---sn-vh5ouxa-hjue7.googlevideo.com -> 185.200.126.109 (DOH)
+2026-02-16 22:59:55 | [32mINFO[0m | CTE.DNS | Resolved rr2---sn-vh5ouxa-hjue7.googlevideo.com -> 185.200.126.109 (DOH)
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Proxy | [15953c96] Protocol: HTTP
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr12---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr12---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Proxy | [5ed9f420] Protocol: HTTP
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr12---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr12---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Proxy | [dd0acc90] Protocol: HTTP
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Proxy | [f729de97] Protocol: HTTP
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr4---sn-vh5ouxa-hjuee.googlevideo.com:443
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr4---sn-vh5ouxa-hjuee.googlevideo.com
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Proxy | [ab1f2b29] Protocol: HTTP
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr4---sn-vh5ouxa-hjuee.googlevideo.com:443
+2026-02-16 22:59:59 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr4---sn-vh5ouxa-hjuee.googlevideo.com
+2026-02-16 23:00:00 | [32mINFO[0m | CTE.DNS | Resolved rr12---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.27 (DOH)
+2026-02-16 23:00:00 | [32mINFO[0m | CTE.DNS | Resolved rr12---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.27 (DOH)
+2026-02-16 23:00:00 | [32mINFO[0m | CTE.DNS | Resolved rr6---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.21 (DOH)
+2026-02-16 23:00:00 | [32mINFO[0m | CTE.DNS | Resolved rr4---sn-vh5ouxa-hjuee.googlevideo.com -> 185.200.126.143 (DOH)
+2026-02-16 23:00:01 | [32mINFO[0m | CTE.DNS | Resolved rr4---sn-vh5ouxa-hjuee.googlevideo.com -> 185.200.126.143 (DOH)
+2026-02-16 23:00:02 | [32mINFO[0m | CTE.Proxy | [fe942a4b] Protocol: HTTP
+2026-02-16 23:00:02 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr8---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 23:00:02 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr8---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 23:00:03 | [32mINFO[0m | CTE.DNS | Resolved rr8---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.83 (DOH)
+2026-02-16 23:00:32 | [32mINFO[0m | CTE.Proxy | [8ce1ac8d] Protocol: HTTP
+2026-02-16 23:00:32 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr1---sn-vh5ouxa-hjur.googlevideo.com:443
+2026-02-16 23:00:32 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr1---sn-vh5ouxa-hjur.googlevideo.com
+2026-02-16 23:00:34 | [32mINFO[0m | CTE.DNS | Resolved rr1---sn-vh5ouxa-hjur.googlevideo.com -> 185.200.126.44 (DOH)
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Proxy | [27f9549c] Protocol: HTTP
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr10---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr10---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Proxy | [1368db75] Protocol: HTTP
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr10---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr10---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Proxy | [af34cf61] Protocol: HTTP
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr10---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr10---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Proxy | [38e8d2df] Protocol: HTTP
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr10---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 23:00:44 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr10---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 23:00:45 | [32mINFO[0m | CTE.DNS | Resolved rr10---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.25 (DOH)
+2026-02-16 23:00:45 | [32mINFO[0m | CTE.DNS | Resolved rr10---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.25 (DOH)
+2026-02-16 23:00:46 | [32mINFO[0m | CTE.DNS | Resolved rr10---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.25 (DOH)
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Proxy | [3a2b0358] Protocol: HTTP
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Proxy | [d00cf92e] Protocol: HTTP
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Proxy | [6bc85c3b] Protocol: HTTP
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Proxy | [f5a412a1] Protocol: HTTP
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 23:00:48 | [32mINFO[0m | CTE.DNS | Resolved rr6---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.81 (DOH)
+2026-02-16 23:00:49 | [32mINFO[0m | CTE.DNS | Resolved rr6---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.81 (DOH)
+2026-02-16 23:00:49 | [32mINFO[0m | CTE.DNS | Resolved rr6---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.81 (DOH)
+2026-02-16 23:00:49 | [32mINFO[0m | CTE.Proxy | [9bb0acce] Protocol: HTTP
+2026-02-16 23:00:49 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT i9.ytimg.com:443
+2026-02-16 23:00:49 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: i9.ytimg.com
+2026-02-16 23:00:49 | [32mINFO[0m | CTE.DNS | Resolved rr6---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.81 (DOH)
+2026-02-16 23:00:50 | [32mINFO[0m | CTE.Proxy | [2ffe571f] Protocol: HTTP
+2026-02-16 23:00:50 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr7---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 23:00:50 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr7---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 23:00:50 | [32mINFO[0m | CTE.Proxy | [2417eb4e] Protocol: HTTP
+2026-02-16 23:00:50 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr7---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 23:00:50 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr7---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 23:00:50 | [32mINFO[0m | CTE.Proxy | [af35ba8a] Protocol: HTTP
+2026-02-16 23:00:50 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr7---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 23:00:50 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr7---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 23:00:50 | [32mINFO[0m | CTE.DNS | Resolved i9.ytimg.com -> 142.250.75.110 (DOH)
+2026-02-16 23:00:51 | [32mINFO[0m | CTE.DNS | Resolved rr7---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.22 (DOH)
+2026-02-16 23:00:51 | [32mINFO[0m | CTE.Proxy | [69ecba2a] Protocol: HTTP
+2026-02-16 23:00:51 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr7---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 23:00:51 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr7---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 23:00:51 | [32mINFO[0m | CTE.DNS | Resolved rr7---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.22 (DOH)
+2026-02-16 23:01:15 | [33mWARNING[0m | CTE.DNS | Encrypted DNS failed for rr10---sn-vh5ouxa-hjuk.googlevideo.com, trying system DNS
+2026-02-16 23:01:18 | [33mWARNING[0m | CTE.DNS | Encrypted DNS failed for rr7---sn-vh5ouxa-hjud.googlevideo.com, trying system DNS
+2026-02-16 23:02:50 | [32mINFO[0m | CTE.Proxy | [93609b78] Protocol: HTTP
+2026-02-16 23:02:50 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT connectivitycheck.gstatic.com:443
+2026-02-16 23:02:50 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: connectivitycheck.gstatic.com
+2026-02-16 23:02:52 | [32mINFO[0m | CTE.DNS | Resolved connectivitycheck.gstatic.com -> 142.250.75.99 (DOH)
+2026-02-16 23:06:59 | [32mINFO[0m | CTE.Proxy | [d3570931] Protocol: HTTP
+2026-02-16 23:06:59 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 23:06:59 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 23:06:59 | [32mINFO[0m | CTE.DNS | Resolved rr6---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.81 (DOH)
+2026-02-16 23:07:42 | [32mINFO[0m | CTE.Proxy | [13767e97] Protocol: HTTP
+2026-02-16 23:07:42 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT play.googleapis.com:443
+2026-02-16 23:07:42 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: play.googleapis.com
+2026-02-16 23:07:43 | [32mINFO[0m | CTE.DNS | Resolved play.googleapis.com -> 216.239.34.223 (DOH)
+2026-02-16 23:16:32 | [32mINFO[0m | CTE.Proxy | [372cf8d7] Protocol: HTTP
+2026-02-16 23:16:32 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT play.googleapis.com:443
+2026-02-16 23:16:32 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: play.googleapis.com
+2026-02-16 23:16:32 | [32mINFO[0m | CTE.DNS | Resolved play.googleapis.com -> 216.239.36.223 (DOH)
+2026-02-16 23:16:33 | [32mINFO[0m | CTE.Proxy | [756b2671] Protocol: HTTP
+2026-02-16 23:16:33 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT play.googleapis.com:443
+2026-02-16 23:16:33 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: play.googleapis.com
+2026-02-16 23:17:40 | [32mINFO[0m | CTE.Proxy | [3f31876b] Protocol: HTTP
+2026-02-16 23:17:40 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT sdk.pushmessage.samsung.com:443
+2026-02-16 23:17:40 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: sdk.pushmessage.samsung.com
+2026-02-16 23:17:42 | [32mINFO[0m | CTE.DNS | Resolved sdk.pushmessage.samsung.com -> 34.240.146.67 (DOH)
+2026-02-16 23:18:32 | [32mINFO[0m | CTE.Proxy | [bc1d09cc] Protocol: HTTP
+2026-02-16 23:18:32 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT scs-apne2.bixbyllm.com:443
+2026-02-16 23:18:32 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: scs-apne2.bixbyllm.com
+2026-02-16 23:18:34 | [32mINFO[0m | CTE.DNS | Resolved scs-apne2.bixbyllm.com -> 34.160.125.113 (DOH)
+2026-02-16 23:20:17 | [32mINFO[0m | CTE.Proxy | [bea9912b] Protocol: HTTP
+2026-02-16 23:20:17 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 23:20:17 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 23:20:18 | [32mINFO[0m | CTE.DNS | Resolved rr6---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.81 (DOH)
+2026-02-16 23:20:29 | [32mINFO[0m | CTE.Proxy | [5e62b179] Protocol: HTTP
+2026-02-16 23:20:29 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT lh5.googleusercontent.com:443
+2026-02-16 23:20:29 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: lh5.googleusercontent.com
+2026-02-16 23:20:29 | [32mINFO[0m | CTE.Proxy | [37a452bf] Protocol: HTTP
+2026-02-16 23:20:29 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT i.ytimg.com:443
+2026-02-16 23:20:29 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: i.ytimg.com
+2026-02-16 23:20:31 | [32mINFO[0m | CTE.DNS | Resolved lh5.googleusercontent.com -> 142.250.75.33 (DOH)
+2026-02-16 23:20:31 | [32mINFO[0m | CTE.DNS | Resolved i.ytimg.com -> 142.250.75.54 (DOH)
+2026-02-16 23:20:59 | [32mINFO[0m | CTE.Proxy | [39e8db6f] Protocol: HTTP
+2026-02-16 23:20:59 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT lh3.googleusercontent.com:443
+2026-02-16 23:20:59 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: lh3.googleusercontent.com
+2026-02-16 23:21:01 | [32mINFO[0m | CTE.DNS | Resolved lh3.googleusercontent.com -> 142.250.75.33 (DOH)
+2026-02-16 23:21:05 | [32mINFO[0m | CTE.Proxy | [8bbcf74d] Protocol: HTTP
+2026-02-16 23:21:05 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT i9.ytimg.com:443
+2026-02-16 23:21:05 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: i9.ytimg.com
+2026-02-16 23:21:07 | [32mINFO[0m | CTE.DNS | Resolved i9.ytimg.com -> 142.250.75.110 (DOH)
+2026-02-16 23:22:38 | [32mINFO[0m | CTE.Proxy | [93e1f896] Protocol: HTTP
+2026-02-16 23:22:38 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT firebaselogging.googleapis.com:443
+2026-02-16 23:22:38 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: firebaselogging.googleapis.com
+2026-02-16 23:22:39 | [32mINFO[0m | CTE.DNS | Resolved firebaselogging.googleapis.com -> 216.239.32.223 (DOH)
+2026-02-16 23:23:32 | [32mINFO[0m | CTE.Proxy | [5af8dce1] Protocol: HTTP
+2026-02-16 23:23:32 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 23:23:32 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 23:26:32 | [32mINFO[0m | CTE.Proxy | [f7fc918c] Protocol: HTTP
+2026-02-16 23:26:32 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr6---sn-vh5ouxa-hjuy.googlevideo.com:443
+2026-02-16 23:26:32 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr6---sn-vh5ouxa-hjuy.googlevideo.com
+2026-02-16 23:26:34 | [32mINFO[0m | CTE.DNS | Resolved rr6---sn-vh5ouxa-hjuy.googlevideo.com -> 185.200.126.81 (DOH)
+2026-02-16 23:27:03 | [32mINFO[0m | CTE.Proxy | [cc84f4be] Protocol: HTTP
+2026-02-16 23:27:03 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT i.ytimg.com:443
+2026-02-16 23:27:03 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: i.ytimg.com
+2026-02-16 23:27:03 | [32mINFO[0m | CTE.Proxy | [3a5fba3b] Protocol: HTTP
+2026-02-16 23:27:03 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT i.ytimg.com:443
+2026-02-16 23:27:03 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: i.ytimg.com
+2026-02-16 23:27:04 | [32mINFO[0m | CTE.DNS | Resolved i.ytimg.com -> 142.250.75.54 (DOH)
+2026-02-16 23:27:04 | [32mINFO[0m | CTE.Proxy | [5217e96f] Protocol: HTTP
+2026-02-16 23:27:04 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr10---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 23:27:04 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr10---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 23:27:04 | [32mINFO[0m | CTE.Proxy | [1f656fa2] Protocol: HTTP
+2026-02-16 23:27:04 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr10---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 23:27:04 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr10---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 23:27:04 | [32mINFO[0m | CTE.Proxy | [466629c0] Protocol: HTTP
+2026-02-16 23:27:04 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr10---sn-vh5ouxa-hjuk.googlevideo.com:443
+2026-02-16 23:27:04 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr10---sn-vh5ouxa-hjuk.googlevideo.com
+2026-02-16 23:27:05 | [32mINFO[0m | CTE.DNS | Resolved i.ytimg.com -> 172.217.20.86 (DOH)
+2026-02-16 23:27:05 | [32mINFO[0m | CTE.DNS | Resolved rr10---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.25 (DOH)
+2026-02-16 23:27:06 | [32mINFO[0m | CTE.DNS | Resolved rr10---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.25 (DOH)
+2026-02-16 23:27:06 | [32mINFO[0m | CTE.DNS | Resolved rr10---sn-vh5ouxa-hjuk.googlevideo.com -> 213.202.7.25 (DOH)
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Proxy | [b21a468a] Protocol: HTTP
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr4---sn-vh5ouxa-hjur.googlevideo.com:443
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr4---sn-vh5ouxa-hjur.googlevideo.com
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Proxy | [3b6545e3] Protocol: HTTP
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr4---sn-vh5ouxa-hjur.googlevideo.com:443
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr4---sn-vh5ouxa-hjur.googlevideo.com
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Proxy | [65860180] Protocol: HTTP
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr4---sn-vh5ouxa-hjur.googlevideo.com:443
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr4---sn-vh5ouxa-hjur.googlevideo.com
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Proxy | [3f50809b] Protocol: HTTP
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT www.youtube.com:443
+2026-02-16 23:27:07 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: www.youtube.com
+2026-02-16 23:27:08 | [32mINFO[0m | CTE.Proxy | [72e016dd] Protocol: HTTP
+2026-02-16 23:27:08 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr4---sn-vh5ouxa-hjur.googlevideo.com:443
+2026-02-16 23:27:08 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr4---sn-vh5ouxa-hjur.googlevideo.com
+2026-02-16 23:27:08 | [32mINFO[0m | CTE.DNS | Resolved www.youtube.com -> 216.58.214.142 (DOH)
+2026-02-16 23:27:08 | [32mINFO[0m | CTE.DNS | Resolved rr4---sn-vh5ouxa-hjur.googlevideo.com -> 185.200.126.47 (DOH)
+2026-02-16 23:27:08 | [32mINFO[0m | CTE.DNS | Resolved rr4---sn-vh5ouxa-hjur.googlevideo.com -> 185.200.126.47 (DOH)
+2026-02-16 23:27:08 | [32mINFO[0m | CTE.Proxy | [b4d25538] Protocol: HTTP
+2026-02-16 23:27:08 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr2---sn-vh5ouxa-hjur.googlevideo.com:443
+2026-02-16 23:27:08 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr2---sn-vh5ouxa-hjur.googlevideo.com
+2026-02-16 23:27:10 | [32mINFO[0m | CTE.DNS | Resolved rr4---sn-vh5ouxa-hjur.googlevideo.com -> 185.200.126.47 (DOH)
+2026-02-16 23:27:11 | [32mINFO[0m | CTE.DNS | Resolved rr2---sn-vh5ouxa-hjur.googlevideo.com -> 185.200.126.45 (DOH)
+2026-02-16 23:27:16 | [32mINFO[0m | CTE.Proxy | [ca725a4a] Protocol: HTTP
+2026-02-16 23:27:16 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT yt3.ggpht.com:443
+2026-02-16 23:27:16 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: yt3.ggpht.com
+2026-02-16 23:27:16 | [32mINFO[0m | CTE.Proxy | [35feb632] Protocol: HTTP
+2026-02-16 23:27:16 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT yt3.ggpht.com:443
+2026-02-16 23:27:16 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: yt3.ggpht.com
+2026-02-16 23:27:16 | [32mINFO[0m | CTE.Proxy | [00af2435] Protocol: HTTP
+2026-02-16 23:27:16 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT yt3.ggpht.com:443
+2026-02-16 23:27:16 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: yt3.ggpht.com
+2026-02-16 23:27:17 | [32mINFO[0m | CTE.DNS | Resolved yt3.ggpht.com -> 142.250.75.65 (DOH)
+2026-02-16 23:27:17 | [32mINFO[0m | CTE.DNS | Resolved yt3.ggpht.com -> 142.250.75.65 (DOH)
+2026-02-16 23:27:18 | [32mINFO[0m | CTE.DNS | Resolved yt3.ggpht.com -> 142.250.75.193 (DOH)
+2026-02-16 23:27:37 | [32mINFO[0m | CTE.Proxy | [8a4a64b3] Protocol: HTTP
+2026-02-16 23:27:37 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT initplayback:443
+2026-02-16 23:27:37 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: initplayback
+2026-02-16 23:27:37 | [32mINFO[0m | CTE.Proxy | [06883645] Protocol: HTTP
+2026-02-16 23:27:37 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT initplayback:443
+2026-02-16 23:27:37 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: initplayback
+2026-02-16 23:27:37 | [33mWARNING[0m | CTE.DNS | Encrypted DNS failed for rr4---sn-vh5ouxa-hjur.googlevideo.com, trying system DNS
+2026-02-16 23:27:38 | [32mINFO[0m | CTE.Proxy | [8a6d0a15] Protocol: HTTP
+2026-02-16 23:27:38 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr3---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 23:27:38 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr3---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 23:27:39 | [32mINFO[0m | CTE.DNS | Resolved rr3---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.18 (DOH)
+2026-02-16 23:27:42 | [32mINFO[0m | CTE.Proxy | [613c04db] Protocol: HTTP
+2026-02-16 23:27:42 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr5---sn-vh5ouxa-hjud.googlevideo.com:443
+2026-02-16 23:27:42 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr5---sn-vh5ouxa-hjud.googlevideo.com
+2026-02-16 23:27:45 | [32mINFO[0m | CTE.Proxy | [2ea44a54] Protocol: HTTP
+2026-02-16 23:27:45 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT www.google.com:443
+2026-02-16 23:27:45 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: www.google.com
+2026-02-16 23:27:45 | [32mINFO[0m | CTE.DNS | Resolved www.google.com -> 142.250.75.100 (DOH)
+2026-02-16 23:27:45 | [32mINFO[0m | CTE.DNS | Resolved rr5---sn-vh5ouxa-hjud.googlevideo.com -> 213.202.6.20 (DOH)
+2026-02-16 23:27:54 | [32mINFO[0m | CTE.Proxy | [d4f7bce2] Protocol: HTTP
+2026-02-16 23:27:54 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT mup.amp.mcafee.com:443
+2026-02-16 23:27:54 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: mup.amp.mcafee.com
+2026-02-16 23:27:58 | [32mINFO[0m | CTE.DNS | Resolved mup.amp.mcafee.com -> 57.181.130.197 (DOH)
+2026-02-16 23:27:59 | [32mINFO[0m | CTE.Proxy | [56a9834e] Protocol: HTTP
+2026-02-16 23:27:59 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT mup.amp.mcafee.com:443
+2026-02-16 23:27:59 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: mup.amp.mcafee.com
+2026-02-16 23:28:01 | [32mINFO[0m | CTE.Proxy | [682faff4] Protocol: HTTP
+2026-02-16 23:28:01 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT mmfiles.amp.mcafee.com:443
+2026-02-16 23:28:01 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: mmfiles.amp.mcafee.com
+2026-02-16 23:28:03 | [32mINFO[0m | CTE.DNS | Resolved mmfiles.amp.mcafee.com -> 104.123.68.168 (DOH)
+2026-02-16 23:28:04 | [33mWARNING[0m | CTE.DNS | Encrypted DNS failed for initplayback, trying system DNS
+2026-02-16 23:28:04 | [31mERROR[0m | CTE.DNS | System DNS failed for initplayback: [Errno 7] No address associated with hostname
+2026-02-16 23:28:04 | [31mERROR[0m | CTE.Protocols | DNS resolution failed: initplayback
+2026-02-16 23:28:04 | [33mWARNING[0m | CTE.DNS | Encrypted DNS failed for initplayback, trying system DNS
+2026-02-16 23:28:04 | [31mERROR[0m | CTE.DNS | System DNS failed for initplayback: [Errno 7] No address associated with hostname
+2026-02-16 23:28:04 | [31mERROR[0m | CTE.Protocols | DNS resolution failed: initplayback
+2026-02-16 23:28:45 | [32mINFO[0m | CTE.Proxy | [029be9ad] Protocol: HTTP
+2026-02-16 23:28:45 | [32mINFO[0m | CTE.Protocols | HTTP Request: CONNECT rr1---sn-vh5ouxa-hjur.googlevideo.com:443
+2026-02-16 23:28:45 | [32mINFO[0m | CTE.Protocols | 🔒 Tunnel: rr1---sn-vh5ouxa-hjur.googlevideo.com
+2026-02-16 23:28:45 | [32mINFO[0m | CTE.DNS | Resolved rr1---sn-vh5ouxa-hjur.googlevideo.com -> 185.200.126.44 (DOH)
+2026-02-16 23:29:12 | [32mINFO[0m | CTE.Main | 
+📊 Received signal 2, shutting down...
+2026-02-16 23:29:12 | [32mINFO[0m | CTE.Proxy | Stopping proxy server...
+2026-02-16 23:29:13 | [32mINFO[0m | CTE.Main | 
+📊 Received signal 2, shutting down...
+2026-02-16 23:29:13 | [32mINFO[0m | CTE.Proxy | Stopping proxy server...
+2026-02-16 23:29:13 | [32mINFO[0m | CTE.Main | 
+📊 Received signal 2, shutting down...
+2026-02-16 23:29:13 | [32mINFO[0m | CTE.Proxy | Stopping proxy server...
+2026-02-16 23:29:15 | [32mINFO[0m | CTE.Main | 
+📊 Received signal 2, shutting down...
+2026-02-16 23:29:15 | [32mINFO[0m | CTE.Proxy | Stopping proxy server...
+2026-02-16 23:29:16 | [32mINFO[0m | CTE.Main | 
+📊 Received signal 2, shutting down...
+2026-02-16 23:29:16 | [32mINFO[0m | CTE.Proxy | Stopping proxy server...
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Proxy | Proxy server stopped
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Main | 📊 Final Statistics:
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Main | 👋 Chaos Traffic Engine stopped
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Main | ============================================================
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Proxy | Proxy server stopped
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Proxy | Proxy server stopped
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Proxy | Proxy server stopped
+2026-02-16 23:29:42 | [32mINFO[0m | CTE.Proxy | Proxy server stopped

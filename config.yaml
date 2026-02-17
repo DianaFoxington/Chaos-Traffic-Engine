@@ -1,0 +1,42 @@
+# Chaos Traffic Engine - Configuration
+
+server:
+  host: "0.0.0.0"
+  port: 10809
+  protocol_timeout: 30
+
+buffers:
+  small: 8192       # 8KB - handshake
+  medium: 65536     # 64KB - normal traffic
+  large: 262144     # 256KB - downloads
+  xlarge: 1048576   # 1MB - large files
+
+dns:
+  mode: "doh"  # doh or dot
+  cache_ttl: 300
+  servers_file: "dns_servers.json"
+
+limits:
+  max_connections: 100
+  connection_timeout: 30
+  idle_timeout: 60
+
+bypass:
+  iranian_domains: true
+  download_direct: true
+  iranian_domains_file: "iranian_domains.json"
+
+chaos:
+  aggressive: true  # true = 3-7 fragments, false = 2-4
+  base_jitter_ms: 1.0
+  variance_ms: 2.0
+
+evasion:
+  domain_fronting: true
+  cdn_domains_file: "cdn_domains.json"
+  tls_fragmentation: true
+
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "cte.log"
+  console: true

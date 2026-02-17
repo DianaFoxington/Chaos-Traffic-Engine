@@ -1,0 +1,41 @@
+{
+  "cdn_domains": {
+    "cloudflare": [
+      "www.cloudflare.com",
+      "blog.cloudflare.com",
+      "developers.cloudflare.com",
+      "www.cloudflare.com",
+      "support.cloudflare.com"
+    ],
+    "cloudfront": [
+      "d111111abcdef8.cloudfront.net",
+      "aws.amazon.com",
+      "console.aws.amazon.com",
+      "docs.aws.amazon.com"
+    ],
+    "google": [
+      "www.google.com",
+      "cloud.google.com",
+      "firebase.google.com",
+      "developers.google.com"
+    ],
+    "akamai": [
+      "www.akamai.com",
+      "developer.akamai.com",
+      "learn.akamai.com"
+    ],
+    "fastly": [
+      "www.fastly.com",
+      "docs.fastly.com",
+      "developer.fastly.com"
+    ],
+    "cdn77": [
+      "www.cdn77.com",
+      "client.cdn77.com"
+    ],
+    "lumen": [
+      "www.lumen.com",
+      "www.centurylink.com"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "doh_servers": [
+    {
+      "name": "Cloudflare",
+      "url": "https://1.1.1.1/dns-query",
+      "ip": "1.1.1.1"
+    },
+    {
+      "name": "Cloudflare Secondary",
+      "url": "https://1.0.0.1/dns-query",
+      "ip": "1.0.0.1"
+    },
+    {
+      "name": "Google",
+      "url": "https://8.8.8.8/dns-query",
+      "ip": "8.8.8.8"
+    },
+    {
+      "name": "Google Secondary",
+      "url": "https://8.8.4.4/dns-query",
+      "ip": "8.8.4.4"
+    },
+    {
+      "name": "Quad9",
+      "url": "https://9.9.9.9/dns-query",
+      "ip": "9.9.9.9"
+    },
+    {
+      "name": "AdGuard",
+      "url": "https://94.140.14.14/dns-query",
+      "ip": "94.140.14.14"
+    }
+  ],
+  "dot_servers": [
+    {
+      "name": "Cloudflare",
+      "host": "1.1.1.1",
+      "port": 853,
+      "hostname": "one.one.one.one"
+    },
+    {
+      "name": "Google",
+      "host": "8.8.8.8",
+      "port": 853,
+      "hostname": "dns.google"
+    },
+    {
+      "name": "Quad9",
+      "host": "9.9.9.9",
+      "port": 853,
+      "hostname": "dns.quad9.net"
+    },
+    {
+      "name": "AdGuard",
+      "host": "94.140.14.14",
+      "port": 853,
+      "hostname": "dns.adguard.com"
+    }
+  ]
+}
