@@ -25,7 +25,7 @@ built for bypassing censorship. tested against advanced DPI systems.
 
 ```mermaid
 flowchart TD
-    A["Your Application / Telegram / Any"]
+    A["Your Application Or Any"]
 
     A -->|localhost:10809| B["Protocol Detector"]
 
