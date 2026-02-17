@@ -27,7 +27,7 @@ built for bypassing censorship. tested against advanced DPI systems.
 flowchart TD
     A["Your Application Or Any"]
 
-    A -->|localhost:10809| B["Protocol Detector"]
+    A -->|127.0.0.1:10809| B["Protocol Detector"]
 
     B --> C[HTTP]
     B --> D[HTTPS]
@@ -142,13 +142,13 @@ python3 main.py
 
 ```
 # Proxy (HTTP)
-Proxy: localhost:10809  |  Type: HTTP
+Proxy: 127.0.0.1:10809 |  Type: HTTP
 
 # SOCKS5
-Host: localhost  |  Port: 10809  |  Type: SOCKS5
+Host: 127.0.0.1 |  Port: 10809  |  Type: SOCKS5
 
 # Telegram
-Connection: SOCKS5  |  Server: localhost  |  Port: 10809
+Connection: SOCKS5  |  Server: 127.0.0.1 |  Port: 10809
 
 But not working
 ```
