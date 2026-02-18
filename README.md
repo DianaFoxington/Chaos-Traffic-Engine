@@ -82,9 +82,7 @@ flowchart TD
 | Smart Bypass | Direct routing for Iranian domains | Active |
 | Real-time Stats | Monitor connections and traffic | Active |
 | Connection Limiting | Max 100 concurrent connections | Active |
-| Docker Support | Containerized deployment | Planned |
 | GUI Dashboard | Visual monitoring interface | Planned |
-| Authentication | Access control | Planned |
 
 ---
 
