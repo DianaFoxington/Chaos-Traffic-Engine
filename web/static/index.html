@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Traffic Engine</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Oxanium:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <div class="bg-effects">
+        <div class="bg-gradient"></div>
+        <div class="bg-grid"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="app">
+
+        
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 60 60" class="logo-svg">
+                        <defs>
+                            <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%"   stop-color="#00d4ff"/>
+                                <stop offset="50%"  stop-color="#a855f7"/>
+                                <stop offset="100%" stop-color="#10b981"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="30" cy="30" r="28" fill="none" stroke="url(#lg1)" stroke-width="1.5" opacity="0.4"/>
+                        <circle cx="30" cy="30" r="19" fill="none" stroke="url(#lg1)" stroke-width="1.5" class="spin-slow"/>
+                        <circle cx="30" cy="30" r="11" fill="none" stroke="url(#lg1)" stroke-width="1.5" class="spin-fast"/>
+                        <circle cx="30" cy="30" r="4"  fill="url(#lg1)"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>Chaos Traffic Engine</h1>
+                    <span class="subtitle">Real-time Proxy Dashboard</span>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <div class="last-update-box">
+                    <span class="lu-label">Last Update</span>
+                    <span class="lu-time" id="lastUpdate">--:--:--</span>
+                </div>
+                <div class="status-badge" id="statusBadge">
+                    <span class="status-dot" id="statusDot"></span>
+                    <span class="status-text" id="statusText">Connecting…</span>
+                </div>
+            </div>
+        </header>
+
+        
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                </div>
+                <div class="stat-body">
+                    <span class="stat-value mono" id="uptimeBar">---</span>
+                    <span class="stat-label">Uptime</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                </div>
+                <div class="stat-body">
+                    <span class="stat-value mono" id="activeBar">---</span>
+                    <span class="stat-label">Active Connections</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23,6 13.5,15.5 8.5,10.5 1,18"/>
+                        <polyline points="17,6 23,6 23,12"/>
+                    </svg>
+                </div>
+                <div class="stat-body">
+                    <span class="stat-value mono" id="totalTrafficBar">---</span>
+                    <span class="stat-label">Total Traffic</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <div class="stat-body">
+                    <span class="stat-value mono" id="successRateBar">---</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <main class="dashboard">
+
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                        Server Status
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="server-status" id="serverStatusBox">
+                        <div class="server-icon running" id="serverIcon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                        <span class="server-text" id="serverText">RUNNING</span>
+                    </div>
+                    <div class="uptime-wrap">
+                        <div class="uptime-ring-box">
+                            <svg viewBox="0 0 100 100" style="transform:rotate(-90deg);width:100%;height:100%">
+                                <defs>
+                                    <linearGradient id="ug" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%"   stop-color="#00d4ff"/>
+                                        <stop offset="100%" stop-color="#a855f7"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="8"/>
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#ug)" stroke-width="8"
+                                    stroke-dasharray="0 283" stroke-linecap="round" id="uptimeRing"/>
+                            </svg>
+                            <div class="uptime-center">
+                                <span class="uptime-val mono" id="uptimeDisplay">---</span>
+                                <span class="uptime-lbl">uptime</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                        </svg>
+                        Connections
+                    </div>
+                    <span class="badge cyan" id="activeConnBadge">--- active</span>
+                </div>
+                <div class="card-body">
+                    <div class="conn-grid">
+                        <div class="conn-box">
+                            <span class="conn-val mono" id="totalConn">---</span>
+                            <span class="conn-lbl">Total</span>
+                        </div>
+                        <div class="conn-box success">
+                            <span class="conn-val mono" id="successConn">---</span>
+                            <span class="conn-lbl">Success</span>
+                        </div>
+                        <div class="conn-box failed">
+                            <span class="conn-val mono" id="failedConn">---</span>
+                            <span class="conn-lbl">Failed</span>
+                        </div>
+                    </div>
+                    <div class="bar-track">
+                        <div class="bar-fill success-fill" id="connBarFill"></div>
+                        <span class="bar-label" id="connBarLabel">---</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                        </svg>
+                        Network Traffic
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="traffic-row">
+                        <div class="traffic-box upload">
+                            <div class="traffic-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="12" y1="19" x2="12" y2="5"/>
+                                    <polyline points="5,12 12,5 19,12"/>
+                                </svg>
+                            </div>
+                            <div class="traffic-info">
+                                <span class="traffic-val mono" id="sentTraffic">---</span>
+                                <span class="traffic-lbl">Sent</span>
+                            </div>
+                        </div>
+                        <div class="traffic-box download">
+                            <div class="traffic-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <polyline points="19,12 12,19 5,12"/>
+                                </svg>
+                            </div>
+                            <div class="traffic-info">
+                                <span class="traffic-val mono" id="receivedTraffic">---</span>
+                                <span class="traffic-lbl">Received</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-wrap">
+                        <canvas id="trafficChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="18" cy="5" r="3"/>
+                            <circle cx="6"  cy="12" r="3"/>
+                            <circle cx="18" cy="19" r="3"/>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                        </svg>
+                        Routing
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="donut-wrap">
+                        <svg viewBox="0 0 160 160" class="donut-svg">
+                            <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="20"/>
+                            <circle cx="80" cy="80" r="60" fill="none" stroke="#10b981" stroke-width="20"
+                                stroke-dasharray="0 377" stroke-linecap="round"
+                                transform="rotate(-90 80 80)" id="bypassedArc" class="donut-seg"/>
+                            <circle cx="80" cy="80" r="60" fill="none" stroke="#a855f7" stroke-width="20"
+                                stroke-dasharray="0 377" stroke-linecap="round"
+                                transform="rotate(-90 80 80)" id="tunneledArc" class="donut-seg"/>
+                        </svg>
+                        <div class="donut-center">
+                            <span class="donut-val mono" id="routingTotal">---</span>
+                            <span class="donut-lbl">routes</span>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-row">
+                            <span class="legend-dot" style="background:#10b981"></span>
+                            <span class="legend-name">Bypassed</span>
+                            <span class="legend-val mono" id="bypassedCount">---</span>
+                        </div>
+                        <div class="legend-row">
+                            <span class="legend-dot" style="background:#a855f7"></span>
+                            <span class="legend-name">Tunneled</span>
+                            <span class="legend-val mono" id="tunneledCount">---</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card-row-2">
+
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                            <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                        </svg>
+                        Protocols
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="proto-list">
+                        <div class="proto-item">
+                            <div class="proto-head">
+                                <span class="proto-badge http">HTTP</span>
+                                <span class="proto-name">HTTP / HTTPS</span>
+                                <span class="proto-cnt mono" id="httpCount">---</span>
+                            </div>
+                            <div class="bar-track sm">
+                                <div class="bar-fill http-fill" id="httpBar"></div>
+                            </div>
+                        </div>
+                        <div class="proto-item">
+                            <div class="proto-head">
+                                <span class="proto-badge socks5">S5</span>
+                                <span class="proto-name">SOCKS5</span>
+                                <span class="proto-cnt mono" id="socks5Count">---</span>
+                            </div>
+                            <div class="bar-track sm">
+                                <div class="bar-fill socks5-fill" id="socks5Bar"></div>
+                            </div>
+                        </div>
+                        <div class="proto-item">
+                            <div class="proto-head">
+                                <span class="proto-badge ss">SS</span>
+                                <span class="proto-name">Shadowsocks</span>
+                                <span class="proto-cnt mono" id="ssCount">---</span>
+                            </div>
+                            <div class="bar-track sm">
+                                <div class="bar-fill ss-fill" id="ssBar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        DNS Cache
+                    </div>
+                    <span class="badge green" id="cacheSizeBadge">--- entries</span>
+                </div>
+                <div class="card-body">
+                    <div class="dns-layout">
+                        <div class="dns-ring-box">
+                            <svg viewBox="0 0 120 120" style="width:100%;height:100%;transform:rotate(-90deg)">
+                                <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="12"/>
+                                <circle cx="60" cy="60" r="52" fill="none" stroke="#00d4ff" stroke-width="12"
+                                    stroke-dasharray="0 327" stroke-linecap="round" id="hitRateRing"/>
+                            </svg>
+                            <div class="dns-center">
+                                <span class="dns-pct mono" id="hitRateValue">---</span>
+                                <span class="dns-lbl">Hit Rate</span>
+                            </div>
+                        </div>
+                        <div class="dns-stats">
+                            <div class="dns-stat hits">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <div class="dns-info">
+                                    <span class="dns-val mono" id="cacheHits">---</span>
+                                    <span class="dns-key">Cache Hits</span>
+                                </div>
+                            </div>
+                            <div class="dns-stat misses">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="6"  x2="6"  y2="18"/>
+                                    <line x1="6"  y1="6"  x2="18" y2="18"/>
+                                </svg>
+                                <div class="dns-info">
+                                    <span class="dns-val mono" id="cacheMisses">---</span>
+                                    <span class="dns-key">Cache Misses</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            
+            <div class="card card-wide">
+                <div class="card-header">
+                    <div class="card-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                        Chaos Metrics
+                    </div>
+                    <span class="badge purple" id="samplesBadge">--- samples</span>
+                </div>
+                <div class="card-body">
+                    <div class="chaos-grid">
+                        
+                        <div class="chaos-cell">
+                            <div class="chaos-ring-box">
+                                <svg viewBox="0 0 80 80" style="width:100%;height:100%;transform:rotate(-90deg)">
+                                    <circle cx="40" cy="40" r="35" fill="none" stroke="rgba(0,212,255,0.15)" stroke-width="6"/>
+                                    <circle cx="40" cy="40" r="35" fill="none" stroke="#00d4ff" stroke-width="6"
+                                        stroke-dasharray="0 220" stroke-linecap="round" id="lyapunovRing"/>
+                                </svg>
+                                <span class="chaos-val mono cyan" id="lyapunovValue">---</span>
+                            </div>
+                            <div class="chaos-meta">
+                                <span class="chaos-name">Lyapunov Exponent</span>
+                                <span class="chaos-desc">System unpredictability</span>
+                            </div>
+                        </div>
+                        
+                        <div class="chaos-cell">
+                            <div class="chaos-ring-box">
+                                <svg viewBox="0 0 80 80" style="width:100%;height:100%;transform:rotate(-90deg)">
+                                    <circle cx="40" cy="40" r="35" fill="none" stroke="rgba(168,85,247,0.15)" stroke-width="6"/>
+                                    <circle cx="40" cy="40" r="35" fill="none" stroke="#a855f7" stroke-width="6"
+                                        stroke-dasharray="0 220" stroke-linecap="round" id="entropyRing"/>
+                                </svg>
+                                <span class="chaos-val mono purple" id="entropyValue">---</span>
+                            </div>
+                            <div class="chaos-meta">
+                                <span class="chaos-name">Shannon Entropy</span>
+                                <span class="chaos-desc">Info density (max 8 bits)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="chaos-cell">
+                            <div class="chaos-ring-box">
+                                <svg viewBox="0 0 80 80" style="width:100%;height:100%;transform:rotate(-90deg)">
+                                    <circle cx="40" cy="40" r="35" fill="none" stroke="rgba(16,185,129,0.15)" stroke-width="6"/>
+                                    <circle cx="40" cy="40" r="35" fill="none" stroke="#10b981" stroke-width="6"
+                                        stroke-dasharray="0 220" stroke-linecap="round" id="correlationRing"/>
+                                </svg>
+                                <span class="chaos-val mono green" id="correlationValue">---</span>
+                            </div>
+                            <div class="chaos-meta">
+                                <span class="chaos-name">Correlation Dim.</span>
+                                <span class="chaos-desc">Fractal complexity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        
+        <footer class="footer">
+            <div class="footer-left">
+                <span>Chaos Traffic Engine</span>
+                <span class="footer-ver"> v0.1.0-beta</span>
+            </div>
+            <div class="footer-right">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin-slow" style="width:14px;height:14px">
+                    <polyline points="23,4 23,10 17,10"/>
+                    <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                </svg>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
